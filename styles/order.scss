@@ -1,0 +1,92 @@
+.order {
+    padding: 50px $marg;
+    background-color: #f4f5f7;
+    @include for-large-up {
+        padding: 73px 0 72px 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &__img {
+        max-width: 200px;
+        @include for-large-up {
+            max-width: 269px;
+            margin-right: 121px;
+        }
+    }
+    &__title {
+        width: $width;
+        font-weight: $font-bold;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.25px;
+        margin-right: $marg;
+        margin-left: $marg;
+        margin-top: 40px;
+        @include for-large-up {
+            width: $width-large;
+        }
+    }
+    &__details {
+        max-width: $width;
+        @include for-large-up {
+            max-width: $width-large;
+        }
+    }
+    &__text {
+        width: $width;
+        font-size: $font-size;
+        line-height: 32px;
+        margin: 0;
+        margin-top: 18px;
+        margin-right: $marg;
+        margin-left: $marg;
+        @include for-large-up {
+            width: $width-large;
+        }
+    }
+    &__email {
+        margin-top: 40px;
+        background-color: $text-color;
+        border: 1px solid rgba(43, 41, 45, 0.2);
+        box-sizing: border-box;
+        border-radius: 2px;
+        height: $height;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        line-height: 13px;
+        @include for-large-up {
+            margin-top: 0;
+        }
+    }
+    &::placeholder {
+        color: #2b292d;
+    }
+    &__button {
+        width: 100%;
+        margin-top: 12px;
+        @include for-large-up {
+            margin-top: 0;
+            margin-left: 10px;
+            width: $width-button-blue;
+            flex-shrink: 0;
+        }
+    }
+    &__terms {
+        font-size: 14px;
+        line-height: $font-size;
+        color: rgba(43, 41, 45, 0.6);
+    }
+    &__terms-link {
+        color: #3142C6;
+    }
+}
+@media screen and (min-width:1400px) {
+.order {
+    &__form {
+        display: flex;
+        margin-top: 26px;
+    }
+}
+}

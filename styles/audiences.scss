@@ -1,0 +1,284 @@
+.audiences {
+    padding: 50px $marg;
+    background-color: #00a1c612;
+    @include for-large-up {
+        width: 1400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__subtitle {
+        font-weight: $font-bold;
+        font-size: $font-size;
+        line-height: 34px;
+        text-align: center;
+        width: $width;
+        margin-bottom: 17px;
+    }
+    &__title {
+        width: $width;
+        margin: 0;
+        font-weight: $font-bold;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.357143px;
+        text-align: center;
+        @include for-large-up {
+            margin-right: 0;
+            font-weight: $font-bold;
+            font-size: 56px;
+            line-height: 56px;
+            letter-spacing: -0.5px;
+            width: $width-large;
+            margin-top: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+    &__description {
+        margin: 0;
+        margin-top: 18px;
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+        width: 290px;
+        @include for-large-up {
+            margin-top: 30px;
+            width: $width-large;
+            font-size: 24px;
+            line-height: 34px;
+        }
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-top: 30px;
+        @include for-large-up {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    &__first-button {
+        width: $width;
+        height: $height;
+        background-color: $color-hover;
+        color: $text-color;
+        font-size: 18px;
+        line-height: 13px;
+        text-align: center;
+        font-weight: $font-bold;
+        border: none;
+        box-shadow: $shadow;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), $color-hover;
+        @include for-large-up {
+            width: $width-button-blue;
+            height: $height;
+            background-color: $color-hover;
+            color: $text-color;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: $font-bold;
+            border: none;
+            border-radius: 3px;
+            margin-right: 10px;
+            margin-left: 0;
+            box-shadow: none;
+        }
+    }
+    &__second-button {
+        width: $width;
+        height: $height;
+        font-weight: $font-bold;
+        font-size: 18px;
+        line-height: 13px;
+        margin-top: 12px;
+        color: #000000;
+        // box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+        // background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
+        border: none;
+        @include for-large-up {
+            width: $width-button-white;
+            height: $height;
+            margin-top: 0;
+            margin-left: 10px;
+        }
+    }
+    
+    &__possibless-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        max-width: $width-page;
+        @include for-large-up {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 111px auto 110px auto;
+        }
+    }
+    &__possibless-title {
+        margin-top: $font-size;
+        padding-bottom: 33px;
+    }
+    &__first-column {
+        width: $width;
+        margin-top: 40px;
+        text-align: center;
+        box-shadow: $shadow;
+        border-radius: $border-radius;
+        font-weight: $font-bold;
+        font-size: $font-size;
+        line-height: $line-height;
+        &:hover {
+            background-color: $color-hover;
+            font-weight: $font-bold;
+            color: $text-color;
+            box-shadow: $shadow-hover;
+        }
+        @include for-large-up {
+            font-weight: $font-bold;
+            font-size: $font-size;
+            line-height: $line-height;
+            margin-left: 130px;
+            margin-right: 30px;
+            box-shadow: none;
+            text-align: center;
+            &:hover {
+                background-color: $color-hover;
+                font-weight: $font-bold;
+                color: $text-color;
+                width: 262px;
+                border-radius: 3px;
+                font-size: $font-size;
+                line-height: $line-height;
+        }
+        }
+    }
+    &__second-column {
+        margin-top: $marg;
+        width: $width;
+        font-size: $font-size;
+        line-height: $line-height;
+        font-weight: $font-bold;
+        text-align: center;
+        border-radius: $border-radius;
+        box-shadow: $shadow;
+        &:hover {
+            background-color: $color-hover;
+            font-weight: $font-bold;
+            color: $text-color;
+            box-shadow: $shadow-hover;
+        }
+        @include for-large-up {
+            margin-right: 30px;
+            width: 262px;
+            color: rgb(0, 0, 0);
+            font-size: $font-size;
+            line-height: $line-height;
+            text-align: center;
+            border-radius: $border-radius;
+            box-shadow: none;
+            &:hover {
+                background-color: $color-hover;
+                font-weight: $font-bold;
+                color: $text-color;
+                width: 262px;
+                border-radius: 3px;
+                font-size: $font-size;
+                line-height: $line-height;
+        }
+        }
+    }
+    &__third-column {
+        width: $width;
+        margin: $marg;
+        text-align: center;
+        font-weight: $font-bold;
+        font-size: $font-size;
+        line-height: $line-height;
+        border-radius: $border-radius;
+        box-shadow: $shadow;
+        &:hover {
+            background-color: $color-hover;
+            color: $text-color;
+            box-shadow: $shadow-hover;
+        }
+        @include for-large-up {
+            font-weight: $font-bold;
+            font-size: $font-size;
+            line-height: $line-height;
+            margin-right: 30px;
+            margin-top: 0;
+            margin-left: 0;
+            margin-bottom: 0;
+            box-shadow: none;
+            text-align: center;
+            &:hover {
+                background-color: $color-hover;
+                font-weight: $font-bold;
+                color: $text-color;
+                width: 262px;
+                border-radius: 3px;
+                font-size: $font-size;
+                line-height: $line-height;
+        }
+        }
+    }
+    &__fourth-column {
+        width: $width;
+        margin-top: $marg;
+        margin-bottom: 50px;
+        text-align: center;
+        box-shadow: $shadow;
+        border-radius: $border-radius;
+        font-weight: $font-bold;
+        font-size: $font-size;
+        line-height: $line-height;
+        &:hover {
+            background-color: $color-hover;
+            color: $text-color;
+            box-shadow: $shadow-hover;
+        }
+        @include for-large-up {
+            font-weight: $font-bold;
+            font-size: $font-size;
+            line-height: $line-height;
+            margin: 0;
+            text-align: center;
+            box-shadow: none;
+            &:hover {
+                background-color: $color-hover;
+                font-weight: $font-bold;
+                color: $text-color;
+                width: 262px;
+                border-radius: 3px;
+                font-size: $font-size;
+                line-height: $line-height;
+        }
+        }
+    }
+}
+@media screen and (max-width:399px) {
+.audiences__mobile {
+    width: 90%;
+    margin-right: $marg;
+    margin-left: $marg;
+    border-radius: 2px;
+}
+}

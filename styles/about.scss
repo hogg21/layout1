@@ -1,0 +1,36 @@
+.about {
+    padding: 46px $marg;
+    width: 100%;
+    background: #F4F5F7;
+    @include for-large-up {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 77px 130px 76px 130px;
+        width: 100%;
+    }
+}
+
+.article:last-child {
+    margin-top: 20px;
+    @include for-large-up {
+        width: $width-large;
+        margin-top: 0;
+        margin-left: 29px;
+    }
+}
+.article__title {
+    font-weight: $font-bold;
+    font-size: $font-size;
+    line-height: 32px;
+    margin: 0;
+    @include for-large-up {
+        width: $width-large;
+    }
+}
+.acticle__description {
+    font-size: $font-size;
+    line-height: 32px;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
