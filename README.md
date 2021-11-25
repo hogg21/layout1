@@ -9,3 +9,5 @@ Layout supports mobile (up-to-400) and desktop (up-to-1400) versions
 - [Flexbox](https://en.wikipedia.org/wiki/CSS_Flexible_Box_Layout)
 - [Sass (Scss)](https://sass-lang.com/)
 - [BEM methodology](https://en.bem.info/methodology/)
+# Author
+- Denys Balan
